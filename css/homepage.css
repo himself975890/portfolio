@@ -1,0 +1,46 @@
+#homepage{
+    display: flex;
+    flex: 1;
+    align-self: center;
+    justify-content: center;
+    z-index: 2;
+}
+.homepage_inner{
+    width: 80%;
+}
+.hey{
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+.myname_wrapper{
+    background: linear-gradient(64deg, rgb(0, 181, 129), rgb(0, 114, 201));
+    padding-left: 15px;
+    padding-right: 50px;
+    width: fit-content;
+
+}
+.myname_wrapper h1{
+    font-size: 4.5em;
+    margin: 0;
+    color: #fafafa;
+}
+.homedescription{
+    font-size: 1.2em;
+}
+em{
+    font-weight: 500;
+    font-style: normal;
+}
+@media only screen and (min-width: 768px){
+    .myname_wrapper h1{
+        font-size: 6em;
+    }
+    .myname_wrapper{
+        padding: 0;
+        padding-right: 100px;
+    }
+    .homedescription{
+        font-size: 1.5em;
+        width: 600px;
+    }
+}

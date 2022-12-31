@@ -1,0 +1,186 @@
+#skillspage{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.skillspage_inner{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.skills_top_text{
+    margin-top: 0px;
+}
+
+.skillspage_inner h1{
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.skills_top_text h1{
+    margin-bottom: 30px;
+}
+.skillsdescription{
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+}
+.skills_list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+    flex: .9;
+    
+}
+.skills_list li{
+    display: flex;
+    margin-top: 20px;
+}
+.skills_list li p{
+    margin: 0;
+    margin-left: 30px;
+}
+
+.imthepersontogowith{
+    text-align: center; 
+    font-size: 1.5em;
+    margin-top: auto;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 0px;
+}
+
+.skills-tech{
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 30px;
+
+}
+.skills-tech li{
+    transition: ease-in-out .4s;
+    position: relative;
+    display: inline-block;
+    background-color: #252525;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+    overflow: hidden;
+    min-width: 50px;
+    box-shadow: 1px 1px 5px #252525;
+}
+.skills-tech li p{
+    position: relative;
+    margin: 0;
+    z-index: 1;
+    text-align: center;
+}
+.skills-tech li div{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    background:linear-gradient(64deg, rgb(0, 181, 129), rgb(0, 114, 201)) ;
+    border-radius: 9px;
+    opacity: .5;
+}
+.l1{
+    width: 10%;
+}
+.l2{
+    width: 20%;
+}
+.l3{
+    width: 30%;
+}
+.l4{
+    width: 40%;
+}
+.l5{
+    width: 50%;
+}
+.l6{
+    width: 60%;
+}
+.l7{
+    width: 70%;
+}
+.l8{
+    width: 80%;
+}
+.l9{
+    width: 90%;
+}
+.l10{
+    width: 100%;
+}
+@media only screen and (min-width: 768px){
+    .skills_list{
+        flex-direction: row;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        justify-content: space-around;
+        flex:0;
+    }
+    .skills_list li{
+        flex-direction: column;
+        width: 25%;
+        align-items: center;
+    }
+
+    .skills_list li img{
+        width: 50%;
+    }
+    .skills_list li p {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .imthepersontogowith{
+        text-align: center; 
+        font-size: 2em;
+        margin-top: auto;
+        max-width: 40%;
+        margin: auto;
+    }
+    .lists-container{
+        display: flex;
+    }
+    
+    .skills-tech li:hover{
+        transition: ease-in-out .4s;
+        animation: ani .4s ease-in-out;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: bold;
+        background:linear-gradient(64deg, rgb(0, 181, 129), rgb(0, 114, 201)) ;
+    }
+    .skillspage_inner{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        position: relative;
+    }
+    .skills-tech{
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+        top: 0px;
+    }
+    .skills-tech li{
+        overflow: visible;
+    }
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Manrope:wght@400;500;800&display=swap');
+html{
+    height: 100vh;
+    display: flex;
+    cursor: none;
+  }
+::-webkit-scrollbar{
+  display: none;
+}
+body{
+    font-family: 'Manrope';
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #fafafa;
+    color: #252525;
+    user-select: none;
+    border: solid 1px #252525;
+    padding: 10px;
+}
+.body-dark{
+  background-color: #2a3532;
+  color: #fafafa;
+}
+::selection{
+  background-color: rgb(0, 255, 183);
+}
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.manouInBackground{
+    position: absolute;
+    writing-mode: tb-rl;
+    rotate: 180deg;
+    font-size: 10em;
+    margin-right: 0;
+    right: 0;
+    bottom: 0;
+    width: 1.2em;
+    font-family: 'Inter';
+    color: #fafafa;
+    overflow: hidden;
+
+}
+.manouInBackground span{
+  margin-top: -30px;
+  display: inline-block;
+  font-weight: 900;
+  scrollbar-width: 0;
+  overflow-y: visible;
+  text-shadow: 0 0px 50px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+}
+#u{
+  margin-bottom: 60px;
+}
+#M{
+  margin-top: 10px;
+
+}
+
+.floating-container{
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0,0%);
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0,50px);
+  }
+}
+@keyframes changepage_old {
+  0% {
+    transform: translate(0,0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0,-50vh);
+    opacity:0;
+  }
+}
+@keyframes changepage_new {
+  0% {
+    transform: translate(0,50vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0,0px);
+    opacity: 1;
+  }
+}
+.arrow{
+  width: 30px; 
+  position: absolute; 
+  bottom: 0;
+  animation: glow 3s infinite ease-in-out;
+  opacity: 0;
+  z-index: 3;
+}
+@keyframes glow {
+  50%{
+    opacity: 1;
+  }
+}
