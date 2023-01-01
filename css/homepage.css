@@ -13,7 +13,7 @@
     font-weight: 500;
 }
 .myname_wrapper{
-    background: linear-gradient(64deg, rgb(0, 181, 129), rgb(0, 114, 201));
+    background: linear-gradient(64deg, hwb(163 0% 29%), rgb(0, 114, 201));
     padding-left: 15px;
     padding-right: 50px;
     width: fit-content;

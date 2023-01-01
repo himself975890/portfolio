@@ -3,18 +3,27 @@ var curr_page_id = 0;
 function refresh_header(new_page_id) {
   let curr = document.getElementsByClassName("underliner").item(curr_page_id);
   let newpage = document.getElementsByClassName("underliner").item(new_page_id);
+  let curr_ = document
+    .getElementsByClassName("header_list_element")
+    .item(curr_page_id);
+  let newpage_ = document
+    .getElementsByClassName("header_list_element")
+    .item(new_page_id);
   const w0 = [{ width: 0 }];
   const w100 = [{ width: "10px" }];
+  const blury = [{ filter: "blur(1px)" }];
   const t = {
     duration: 150,
   };
   curr.animate(w0, t);
   setTimeout(() => {
     curr.style.width = 0;
+    curr_.style.filter = "";
   }, 150);
   newpage.animate(w100, t);
   setTimeout(() => {
     newpage.style.width = "10px";
+    newpage_.style.filter = "blur(3px)";
   }, 150);
 }
 

@@ -11,12 +11,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+.myphoto-wrapper{
+    width: 110%;
+    position: relative;
+    aspect-ratio: 1.1;
+    z-index: -1;
 }
 .myphoto{
     border-radius: 20px;
-    background-color: rgb(197, 197, 197);
     width: 110%;
     aspect-ratio: 1.1;
+    object-fit: cover;
+    mix-blend-mode: lighten;
+    background-color: white;
+    z-index: -1;
 }
 .aboutmepage_inner h1{
     font-size: 3.5em;
@@ -29,11 +39,14 @@
 }
 .aboutmepage_inner button{
     background-color: transparent;
-    border: solid #252525 2px;
     padding: 9px;
     padding-left: 45px;
     padding-right: 45px;
     margin-top: 50px;
+}
+.darkButton{
+    border:solid 2px #fafafa;
+    color: #fafafa;
 }
 @media only screen and (min-width:768px){
     #aboutmepage{
@@ -51,12 +64,14 @@
         border-radius: 50px;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
-        width: 40%;
+        width:40%;
+        z-index:1;
     }
     .myphoto:hover{
-        transition: ease-in-out .3s;
+        transition: ease-in-out .5s;
         margin-left: 0;
         margin-right: -50px;
+        animation: blury .5s;
     }
     .aboutmepage_inner div{
         display: flex;
@@ -65,5 +80,10 @@
         padding-left: 10%;
         padding: 100px;
         font-size: 20px;
+    }
+    @keyframes blury {
+        50%{
+            filter: blur(10px);
+        }
     }
 }

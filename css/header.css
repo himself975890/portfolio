@@ -6,6 +6,10 @@ header{
     z-index: 4;
 
 }
+/* fordark */
+.darklogo{
+    filter: invert(1);
+}
 .header_nav{
     display: flex;
     align-items: center;
@@ -31,11 +35,12 @@ header{
     justify-content: center;
 }
 .header_list_element:hover{
-    color: rgb(0, 181, 129);
+    transition: ease-in-out .3s;
+    filter: blur(1px);
 }
 .underliner{
     height: 2px;
-    background: linear-gradient(64deg, rgb(0, 181, 129), rgb(0, 114, 201));
+    background-color: #252525;
     position: absolute;
     bottom: 0;
     width: 0px;

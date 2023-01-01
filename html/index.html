@@ -14,6 +14,7 @@
     <script src="../js/navigation.js" defer></script>
     <script src="../js/background.js" defer></script>
     <script src="../js/mousefollower.js" defer></script>
+    <script src="../js/theme.js" defer></script>
     <link rel="shortcut icon" type="image/png" href="../assets/logo.svg"/>
     <title>Manou.</title>
 </head>
@@ -56,6 +57,7 @@
         <a onclick="change_page(-1)" class="arrow">        
             <img src="../assets/arrow.svg"/>
         </a>
+        <button id="dark" onclick="toggle_theme();">dark theme</button>
     <!-- this is the home papge -->
     <div id="homepage" style="display: none;">
         <div class="homepage_inner">
@@ -77,15 +79,15 @@
                 </div>
                 <ul class="skills_list">
                     <li>
-                        <img src="../assets/illustration.svg"/>
+                        <img class="imagesvg" src="../assets/illustration.svg"/>
                         <p>some stunning creative visuals.</p>
                     </li>
                     <li>
-                        <img src="../assets/webdesign.svg"/>
+                        <img class="imagesvg" src="../assets/webdesign.svg"/>
                         <p>assistance constructing an eye-catching website.</p>
                     </li>
                     <li>
-                        <img src="../assets/mobiledev.svg"/>
+                        <img class="imagesvg" src="../assets/mobiledev.svg"/>
                         <p>to make stunning mobile experiences.</p>
                     </li>
                 </ul>
@@ -93,39 +95,85 @@
                 <p style="font-size: 1em;font-weight: bold; margin: 0;margin-left:10px; margin-top: 10px;">my skills are:</p>
                 <ul class="skills-tech">
                     <li>
-                    <div class="level l8"></div>
+                    <div class="level">
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                    </div>
                     <p>HTML</p>
                 </li>
                 <li>
-                    <div class="level l8"></div>
+                    <div class="level">
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                    </div>
                     <p>CSS</p>
                 </li>
                 <li>
-                    <div class="level l9"></div>
+                    <div class="level">
+                        
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                    </div>
                     <p>JS</p>
                 </li>
                 <li>
-                    <div class="level l9"></div>
+                    <div class="level">
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                    </div>
                     <p>Node.js</p>
                 </li>
                 <li>
-                    <div class="level l6"></div>
+                    <div class="level">
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                    </div>
                     <p>React Native</p>
                 </li>
                 <li>
-                    <div class="level l4"></div>
+                    <div class="level">
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                    </div>
                     <p>Angular</p>
                 </li>
                 <li>
-                    <div class="level l9"></div>
+                    <div class="level">
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                    </div>
                     <p>SQL</p>
                 </li>
                 <li>
-                    <div class="level l7"></div>
+                    <div class="level">
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                    </div>
                     <p>C</p>
                 </li>
                 <li>
-                    <div class="level l8"></div>
+                    <div class="level">
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>
+                        <div class="level-p"></div>                  
+                    </div>
                     <p>Figma</p>
                 </li>
             </ul>
@@ -136,7 +184,7 @@
     <!-- this is the aboutme page -->
     <div id="aboutmepage" style="display: none;">
         <div class="aboutmepage_inner">
-            <img src="../assets/meopt.jpg" style="object-fit: cover;filter:brightness(1.3);" class="myphoto"/>
+                <img src="../assets/meopt (2).png"  class="myphoto"/>
             <div>
                 <h1>about me</h1>
             <!-- <p>Je suis curieux et déterminé. J'aime le sport, les échecs et la musique pop. La compétition me plaît et j'apprécie la physique théorique pour sa faculté à décrire des événements de manière inventive.</p> -->
@@ -165,11 +213,11 @@
                 </form>
                 <div class="contacter">
                     <div class="contactelement">
-                        <img src="../assets/call.svg">
+                        <img class="imagesvg" src="../assets/call.svg">
                         <p>+216 20 896 130</p>
                     </div>
                     <div class="contactelement">
-                        <img src="../assets/arobase.svg">
+                        <img class="imagesvg" src="../assets/arobase.svg">
                         <p>manoumousbahou@gmail.com</p>
                     </div>
                 </div>
